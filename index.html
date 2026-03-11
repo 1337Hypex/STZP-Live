@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Parking Map</title>
+  <link rel="stylesheet" href="assets/app.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+</head>
+<body>
+  <div style="padding:20px;max-width:1400px;margin:0 auto">
+    <div class="topbar">
+      <div>
+        <div class="h1">Свободни паркоместа</div>
+        <div class="hint">Това е публичната карта за GitHub Pages.</div>
+      </div>
+      <button class="btn primary" id="refreshBtn">Refresh</button>
+    </div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <div id="map" style="height:82vh;width:100%"></div>
+    </div>
+    <div class="hint" id="msg" style="margin-top:10px"></div>
+  </div>
+  <script src="assets/config.js"></script>
+  <script src="assets/public-map.js"></script>
+</body>
+</html>
